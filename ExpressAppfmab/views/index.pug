@@ -1,0 +1,22 @@
+﻿extends layout
+
+block content
+  .intro-header
+      .col-xs-12.text-center.abcen1
+        h1.h1_home.wow.fadeIn(data-wow-delay='0.4s')
+          img(src='/images/fraudmetrix.png', alt='logo fraudmetrix', style='width:100%;')
+        h3.h3_home.wow.fadeIn(data-wow-delay='0.6s') Fraud analytics for grownups
+        form#gform(method='post', action='https://script.google.com/a/xcess.co.in/macros/s/AKfycbzlHTPG0BgniNzhDeQ8XudzQ8Cy2D-AebE64Srvjg/exec')
+          ul.list-inline.intro-social-buttons.form-elements
+            li
+              input.form-control#usr(type='text', name='email', required='', placeholder='example@example.com', style='width:500px;')
+              |  
+              input#honeypot(type='text', name='honeypot', style='display: none;')
+            li
+              button.btn.btn-lg(style='color: blue;')
+                i.fa.fa-paper-plane
+                |  Express Interest
+          .thankyou_message(style='display:none;')
+            h2
+              em Thanks
+              | for contacting us! We will get back to you soon!
